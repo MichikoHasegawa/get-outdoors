@@ -1,0 +1,117 @@
+.page-id-21 {
+  .site {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .site-main {
+    flex-grow: 1;
+  }
+
+  .woocommerce-info {
+    background-color: $white;
+  }
+
+  .woocommerce-message {
+    background-color: $green;
+    color: $white;
+    padding: 1rem;
+  }
+
+  .quantity .qty {
+    margin: 0;
+  }
+
+  .restore-item {
+    color: $white;
+    margin-left: 1rem;
+  }
+
+  .woocommerce-cart-form__contents {
+    max-width: 18rem;
+    margin: 0 auto;
+  }
+
+  .product-thumbnail::before {
+    display: none;
+  }
+
+  .product-thumbnail img {
+    display: block;
+    margin: 0 auto;
+    width: 5rem;
+  }
+
+  .product-subtotal {
+    margin-bottom: 3rem;
+  }
+
+  .product-remove a {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .woocommerce-cart-form__contents .tbody:last-child {
+    margin-top: 5rem;
+  }
+
+  .input-text {
+    margin: 3rem 0.5rem 1rem auto;
+    width: 2.7rem;
+  }
+
+  .coupon .input-text {
+    width: unset;
+  }
+
+  .button {
+    margin: 0 auto 3rem;
+  }
+
+  .cart-collaterals {
+    margin: 0;
+  }
+
+  .woocommerce-shipping-destination {
+    margin: 0;
+  }
+
+  .wc-proceed-to-checkout {
+    margin: 3rem auto;
+  }
+
+  .woocommerce-shipping-calculator {
+    margin-bottom: 2rem;
+  }
+
+  .woocommerce-shipping-methods li::marker {
+    content: "";
+  }
+
+  // Cart Total Change Address
+  .address-field .input-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 48em) {
+    .woocommerce-cart-form__contents {
+      max-width: unset;
+    }
+
+    .input-text {
+      margin-top: 4rem;
+    }
+
+    .button {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 70em) {
+    .site-main {
+      width: 100%;
+    }
+  }
+}

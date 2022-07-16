@@ -1,0 +1,76 @@
+.site-header{
+  background-color: #7e7060;
+}
+
+.headerinnerwrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 auto;
+  max-width:62.5rem;
+}
+
+.site-branding{
+  display:flex;
+  align-items: center;
+  a.custom-logo-link{
+    margin-top:0.7rem;
+    margin-bottom:0.7rem;
+    display: block;
+    width:3rem;
+  }
+
+  a.site-title{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left:0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+    .site-branding{
+      margin-left:4rem;
+    }
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1{
+      padding-right:4rem;
+    }
+    #mega-menu-wrap-menu-1 .mega-menu-toggle{
+      padding-right:4rem;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link{
+    margin-left:1rem;
+  }
+  
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator{
+    float:initial;
+  }
+
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link{
+    margin-left:1rem;
+  }
+
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link{
+    margin-left:2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .site-branding{
+    margin-left:1rem;
+  }
+  #mega-menu-wrap-menu-1 .mega-menu-toggle{
+    padding-right:1rem;
+  }
+}
+
+#mega-menu-wrap-menu-1 .mega-menu-toggle.mega-menu-open + #mega-menu-menu-1{
+  position:absolute;
+  top:3.8rem;
+}
+
+#mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu{
+  top:3.8rem;
+}

@@ -1,0 +1,14 @@
+div.product .related ul.products {
+    justify-items: center;
+    &>li.product {
+        width: 100%;
+        max-width: 18rem;
+    }
+}
+
+@media(min-width: 70em) {
+    div.product .related ul.products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
